@@ -1,6 +1,7 @@
 from .. import loader, utils
 from telethon import events
 
+
 def register(cb):
   cb(SendEchoLOL())
   
