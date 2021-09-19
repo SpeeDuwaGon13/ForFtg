@@ -1,7 +1,9 @@
 from .. import loader, utils
 from telethon import events
 
-@loader.tds
+def register(cb):
+  cb(SendEchoLOL())
+  
 class SendEchoLOL(loader.Module):
   """This is my f1rst project :D"""
   strings = {'name': 'VovaProject'}
